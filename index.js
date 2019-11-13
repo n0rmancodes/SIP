@@ -1,6 +1,6 @@
 var http = require('http');
 var urlD = require('url');
-http.createServer(onrequest).listen(3000);
+http.createServer(onrequest).listen(process.env.PORT || 3000);
 
 function onrequest(request, response) {
 	var oUrl = urlD.parse(request.url, true);
