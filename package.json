@@ -1,0 +1,19 @@
+{
+	"name": "simple-image-proxy",
+	"version": "1.0.0",
+	"description": "SIP gets images super easy :)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/n0rmancodes/SIP.git"
+	},
+	"author": "n0rmancodes",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/n0rmancodes/SIP/issues"
+	},
+	"homepage": "https://github.com/n0rmancodes/SIP#readme"
+}
