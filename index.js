@@ -12,9 +12,14 @@ function onrequest(request, response) {
 	}
 	
 	if (!oUrl.query.url.includes("http")) {
-		response.statusCode = 404;
-		response.end("404!");
-		return;
+		var b64url = atob(oUrl.query.url);
+		if (!b64url.includes("http")) {
+			response.statusCode = 404;
+			response.end("404");
+			return;
+		} else {
+			console.log("decoded encoded base64 url successfully.")
+		}
 	}
 	
 	var rUrl = urlD.parse(oUrl.query.url);
